@@ -14,7 +14,7 @@ export default function Home() {
   const [showRoses, setShowRoses] = useState(false);
 
   // Fecha objetivo: 20 de Abril de 2026 a las 00:00:00
-  const targetDate = new Date(2026, 3, 15, 0, 0, 0);
+  const targetDate = new Date(2026, 3, 20, 0, 0, 0);
 
   const handleUnlock = () => {
     setIsUnlocked(true);
