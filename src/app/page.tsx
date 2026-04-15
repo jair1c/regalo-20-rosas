@@ -49,7 +49,7 @@ export default function Home() {
           {!timeIsUp ? (
             <div className="flex flex-col items-center animate-fade-in">
               <p className="text-rose-200/40 uppercase tracking-[0.3em] text-[10px] mb-6 font-sans">
-                El tiempo se agota
+                Tiempo restante
               </p>
               <Countdown targetDate={targetDate} onComplete={() => setTimeIsUp(true)} />
             </div>
