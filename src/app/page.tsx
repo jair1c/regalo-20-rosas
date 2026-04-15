@@ -66,7 +66,7 @@ export default function Home() {
                 Aracely
               </h2>
               <p className="text-rose-500/80 text-sm md:text-base font-sans tracking-widest uppercase">
-                Aquí tienes tus 20 rosas
+                Aquí tienes tu ramito de 20 rosas
               </p>
             </div>
           )}
