@@ -6,10 +6,10 @@ const inter = Inter({ subsets: ["latin"] });
 
 // Configuración de Metadata para la vista previa en redes sociales y WhatsApp
 export const metadata: Metadata = {
-  title: "20 Rosas para Aracely 🌹",
+  title: "20 Rosas",
   description: "Un detalle especial para una persona increíble. Abre el baúl a la medianoche del 20 de abril.",
   openGraph: {
-    title: "20 Rosas para Aracely 🌹",
+    title: "20 Rosas",
     description: "Un detalle especial para una persona increíble. Abre el baúl a la medianoche.",
     url: "https://20-rosas.vercel.app/", // Podrás actualizar esto luego
     siteName: "Regalo 20 Rosas",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
         url: "/rosas.png",
         width: 1200,
         height: 630,
-        alt: "20 Rosas Rojas para Aracely",
+        alt: "20 Rosas Rojas",
       },
     ],
     locale: "es_PE",
