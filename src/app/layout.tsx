@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: "Un detalle especial para una persona increíble. Abre el baúl a la medianoche del 20 de abril.",
   openGraph: {
     title: "20 Rosas",
-    description: "Un detalle especial para una persona increíble. Abre el baúl a la medianoche.",
+    description: "Un detalle especial para una persona increíble. Abre el baúl a la medianoche del 20 de abril.",
     url: "https://20-rosas.vercel.app/", // Podrás actualizar esto luego
     siteName: "Regalo 20 Rosas",
     images: [
