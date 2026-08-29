@@ -1,7 +1,7 @@
 "use client";
 
 import { Playfair_Display } from "next/font/google";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Countdown from "./components/Countdown";
 import Vault from "./components/Vault";
 import Roses from "./components/Roses";
@@ -16,8 +16,26 @@ export default function Home() {
   // Fecha objetivo: 20 de Abril de 2026 a las 00:00:00
   const targetDate = new Date(2026, 3, 20, 0, 0, 0);
 
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem("regalo_20_rosas_unlocked");
+      if (saved === "true") {
+        setTimeIsUp(true);
+        setIsUnlocked(true);
+        setShowRoses(true);
+      }
+    } catch {
+      // Ignorar si localStorage no está disponible
+    }
+  }, []);
+
   const handleUnlock = () => {
     setIsUnlocked(true);
+    try {
+      localStorage.setItem("regalo_20_rosas_unlocked", "true");
+    } catch {
+      // Ignorar si localStorage no está disponible
+    }
     // Esperamos 2.5 segundos para mostrar las rosas y el mensaje final
     setTimeout(() => {
       setShowRoses(true);
